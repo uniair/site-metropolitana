@@ -1,0 +1,78 @@
+@font-face{
+    font-family: 'UnimedSans-Regular';
+    src: url('../fonts/UnimedSans-Regular.otf');
+}
+@font-face{
+    font-family: 'UnimedSlab-Regular';
+    src: url('../fonts/UnimedSlab-Regular.otf');
+}
+
+.formPanel{
+    border:none;
+    border-radius:15px;
+    padding:10px;
+    padding-left:20px;
+    width:500px;
+    background-color:#ECECEC;
+}
+
+.formFieldLabel{
+    font-family: UnimedSlab-Regular;
+    font-size:large;
+    color:#666;
+}
+.formFieldXLabel{
+    font-family: UnimedSlab-Regular;
+    font-size:large;
+    color:#f47920;
+}
+.formField{
+    font-family: UnimedSans-Regular;
+    font-size:medium;
+    color:#00995D;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    height:30px;
+    padding:5px;
+    padding-left:5px;
+    transition: box-shadow .3s;
+}
+.formXField{
+    font-family: UnimedSans-Regular;
+    font-size:medium;
+    color:#00995D;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    padding:5px;
+    padding-left:5px;
+    transition: box-shadow .3s;
+}
+.formXField:hover,.formField:hover{
+    box-shadow: 2px 3px 7px #ccc;
+}
+.formXField:focus,.formField:focus{ 
+    outline:none;
+    box-shadow: 2px 3px 7px #ccc;
+}
+
+.formSubmit{
+    cursor:pointer;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    border:none;
+    border-radius: 10px;
+    width:80px;
+    height:50px;
+    text-align:center;
+    font-family: UnimedSans-Regular;
+    font-size:large;
+    color:white;
+    background-color:#00995D;
+    transition: opacity .3s;
+}
+.formSubmit:hover{
+    opacity: 0.7;
+}

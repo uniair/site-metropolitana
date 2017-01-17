@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='trabalhe-conosco-form.css'>
+    </head>
+    <body>
+        <!-- 
+                Formulário básico para envio de informações curriculares.
+                    - O action aponta via método POST para o php que irá:
+                        -> Processar as informações inseridas no form.
+                        -> Enviar as informações para o banco de dados.
+                Estas informações estarão disponíveis para leitura via banco ou via aplicação GRH (inicialmente).
+                
+                <!>Dependências<!>
+                    trabalhe-conosco-form.css
+                    trabalhe-conosco-form.php
+                    UnimedSans-Regular.otf, UnimedSlab-Regular.otf (caso não sejam padrão na página onde o form esteja inserido)
+                <!><!>
+        -->
+        <form name='workWithUsForm' action='trabalhe-conosco-form.php' method='POST'>
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Dados Gerais</p>
+                <p class='formFieldLabel'>Seu nome: <input type='text' name='name' class='formField' /></p>
+                <p class='formFieldLabel'>CPF: <input type='text' name='cpf' class='formField' /></p>
+                <p class='formFieldLabel'>Data de Nascimento: <input type='text' name='birthdate' class='formField' /></p>
+                <p class='formFieldLabel'>Sexo: <select name="gender" class='formField'>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select></p>
+                <p class='formFieldLabel'>Estado Civil: <select name="civilstatus" class='formField'>
+                                    <option value="Solteiro">Solteiro(a)</option>
+                                    <option value="Casado">Casado(a)</option>
+                                    <option value="Viúvo">Viúvo(a)</option>
+                                </select>
+                <p class='formFieldLabel'>Naturalidade: <input type='text' name='citizenship' class='formField' /></p>
+            </div>
+            <br/>
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Onde você está?</p>
+                <p class='formFieldLabel'>Rua: <input type='text' name='endstreet' class='formField' /></p>
+                <p class='formFieldLabel'>Bairro: <input type='text' name='enddistrict' class='formField' /></p>
+                <p class='formFieldLabel'>Cidade: <input type='text' name='endcity' class='formField' /></p>
+                <p class='formFieldLabel'>Estado: <input type='text' name='endstate' class='formField' /></p>
+            </div>
+            
+            <br/>
+
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Como te contatamos?</p>
+                <p class='formFieldLabel'>Telefone Residencial: <input type='text' name='telres' class='formField' /></p>
+                <p class='formFieldLabel'>Telefone Celular: <input type='text' name='telcel' class='formField' /></p>
+                <p class='formFieldLabel'>Email: <input type='text' name='email' class='formField' /> </p>
+            </div>
+            
+            <br/>
+
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Conte-nos sobre sua educação</p>
+                <p class='formFieldLabel'>Instituição: <input type='text' name='gradinst' class='formField' /></p>
+                <p class='formFieldLabel'>Curso: <input type='text' name='gradcourse' class='formField' /></p>
+                <p class='formFieldLabel'>Periodo: <input type='text' name='gradsemester' class='formField' /></p>
+                <p class='formFieldLabel'>Especializações: <input type='text' name='gradesp' class='formField' /></p>
+                <p class='formFieldLabel'>Idiomas: <input type='text' name='gradlang' class='formField' /></p>
+            </div>
+            
+            <br/>
+
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Suas pretenções</p>
+                <p class='formFieldLabel'>Área de Atuação: <input type='text' name='gradarea' class='formField' /></p>
+                <p class='formFieldLabel'>Período: <input type='text' name='gradperiod' class='formField' /></p>
+                <p class='formFieldLabel'>Pretenção Salarial: <input type='text' name='gradwageclaim' class='formField' /></p>
+            </div>
+            
+            <br/>
+
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Última Experiência de Trabalho</p>
+                <p class='formFieldLabel'>Emprego: <input type='text' name='ultjob' class='formField' /></p>
+                <p class='formFieldLabel'>País: <input type='text' name='ultcountry' class='formField' /></p>
+                <p class='formFieldLabel'>Estado: <input type='text' name='ultstate' class='formField' /></p>
+                <p class='formFieldLabel'>Cidade: <input type='text' name='ultcity' class='formField' /></p>
+                <p class='formFieldLabel'>Cargo: <input type='text' name='ultrole' class='formField' /></p>
+                <p class='formFieldLabel'>Data de Admissão: <input type='text' name='ultadmission' class='formField' /></p>
+                <p class='formFieldLabel'>Data de Saída: <input type='text' name='ultquit' class='formField' /></p>
+            </div>
+            
+            <br/>
+
+            <div class='formPanel'>
+                <p class='formFieldXLabel'>Campo Livre</p>
+                <p class='formFieldXLabel'>!pergunta estratégica aqui! <textarea name='xabout' class='formXField' cols='50' rows='5'></textarea></p>
+            </div>
+
+            <p><input type='submit' name='submit-workWithUs' class='formSubmit' value='Enviar'/></p>
+        </form>
+            
+    </body>
+</html>
